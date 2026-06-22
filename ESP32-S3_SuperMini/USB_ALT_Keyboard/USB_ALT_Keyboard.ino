@@ -100,6 +100,7 @@ void charInfoSimple(const String& charStr) {
   String numStr = String(altCode);
 
   Keyboard.press(KEY_LEFT_ALT);
+  delay(5);
   // Отправляем каждую цифру
   for (int i = 0; i < numStr.length(); i++) {
     int digit = numStr.charAt(i) - '0'; // Преобразуем символ в число
